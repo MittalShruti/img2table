@@ -40,12 +40,12 @@ def lambda_handler(event, context):
     tables = img.extract_tables(borderless_tables=True)
     print('tables', tables)
   
-    for table in tables:
-        print('table', table)
-        for row in table.content.values():
-            for cell in row:
-                print('cell',cell)
-    print(tables)
+    # for table in tables:
+    #     print('table', table)
+    #     for row in table.content.values():
+    #         for cell in row:
+    #             print('cell',cell)
+    # print(tables)
 
     # TODO implement
     return {
